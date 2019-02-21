@@ -1,4 +1,22 @@
-var edad = 27
+var edad = 24
+
+edad += 1
+
+var peso = 63
+
+peso -= 3
+
+var pVino = 20.30
+
+var total = Math.round(pVino * 100 *3)/100
+var total2 = total.toFixed(2)
+var total3 = parseFloat(total2)
+
+var cantidadDeVinoComprado = total3/pVino
+
+
+
+/* var edad = 27
 
 // edad = edad + 1
 edad += 1
@@ -25,3 +43,4 @@ var total2 = parseFloat(totalStr)
 var pizza = 8
 var personas = 2
 var cantidadDePorcionesPorPersona = pizza / personas
+*/
