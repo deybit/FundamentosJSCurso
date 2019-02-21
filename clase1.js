@@ -22,7 +22,7 @@ var nombreInterpolado = `${nombre} ${apellido}`
 var caracterNombre = nombre.charAt(1) + nombre.charAt(2)
 var caracterNombre2 = nombre.substr(1 , 4)
 
-/* RETO: Pedir al usuario nombre y mostrar la ultima letra */
+/* RETO: Pedir al usuario nombre y mostrar la ultima letra de su nombre */
 
 
 var nLetras = nombre.length
