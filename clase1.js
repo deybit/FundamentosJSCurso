@@ -9,6 +9,9 @@ console.log('Tengo ' + edad + '')
 
 var peso = 63
 
+var nombreMayusculas = nombre.toUpperCase()
+var apellidoMinusculas = apellido.toLowerCase()
+
 /* var nombre = 'Sacha', apellido = 'Lifszyc'
 var edad = 28
 
