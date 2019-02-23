@@ -1,4 +1,30 @@
-var sacha = {
+var jose = {
+  nombre: 'Jose',
+  apellido: 'Aleman',
+  edad: 23,
+  ingeniero: true,
+  dj: false,
+  guitarrista: false,
+  piloto:true
+}
+
+function imprimirSiEsMayorDeEdad(persona){
+  if(persona.edad>17){
+    //console.log(persona.nombre + ' es mayor de edad')
+    console.log(`${persona.nombre} es mayor de edad`)
+  }else{
+    // console.log(persona.nombre + ' es menor de edad')
+    console.log(`${persona.nombre} es menor de edad`)
+  }
+}
+
+function mayorDeEdad (persona){
+  if (persona.edad >17){
+    return true
+  }
+}
+
+/* var sacha = {
   nombre: 'Sacha',
   apellido: 'Lifszyc',
   edad: 28,
@@ -59,3 +85,4 @@ function imprimirSiEsMayorDeEdad(persona) {
     console.log(`${persona.nombre} es menor de edad`)
   }
 }
+*/
