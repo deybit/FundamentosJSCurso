@@ -34,9 +34,26 @@ var paula = {
   altura: 1.76
 }
 
+var arreglo = [sacha, alan, martin, dario, vicky, paula]
+
+for(var i=0;i < arreglo.length; i++){
+var persona = arreglo[i]
+  console.log(`${persona.nombre} mide ${persona.altura}`)
+}
+
+
+
+
+
+
+
+
+
+/*
 var personas = [sacha, alan, martin, dario, vicky, paula]
 
 for (var i = 0; i < personas.length; i++) {
   var persona = personas[i]
   console.log(`${persona.nombre} mide ${persona.altura}mts`)
 }
+*/
