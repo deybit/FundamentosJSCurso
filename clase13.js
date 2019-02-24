@@ -16,10 +16,12 @@ const bajarDePeso = (persona, decremento) => {
 }
 
 for (var i = 1; i <= 365; i++ ){
+
   var random = Math.random()
 
   if (random < 0.25){
     aumentarDePeso(jose,Math.random())
+
   }else if ( random < 0.50){
     bajarDePeso(jose,Math.random())
   }
