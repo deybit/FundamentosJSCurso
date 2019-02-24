@@ -1,4 +1,48 @@
-var signo = prompt('¿Cuál es tu signo?')
+var signo = prompt('Introduce tu signo')
+
+switch (signo) {
+  case 'leo':
+    console.log('No creas en esto leo')
+    break;
+  case 'acuario':
+    console.log('No creas en esto acuario')
+    break;
+  case 'piscis':
+    console.log('No creas en esto piscis')
+    break;
+  case 'capricornio':
+    console.log('No creas en esto capricornio')
+    break;
+  case 'aries':
+    console.log('No creas en esto aries')
+    break;
+  case 'cancer':
+    console.log('No creas en esto cancer')
+    break;
+  case 'tauro':
+    console.log('No creas en esto tauro')
+    break;
+  case 'escorpio':
+    console.log('No creas en esto escorpio')
+    break;
+  case 'geminis':
+    console.log('No creas en esto geminis')
+    break;
+  case 'libra':
+    console.log('No creas en esto libra')
+    break;
+  case 'sagitario':
+    console.log('No creas en esto sagitario')
+    break;
+  case 'virgo':
+    console.log('No creas en esto virgo')
+    break;
+
+  default:
+    console.log('No creas en esto de igual forma')
+}
+
+/* var signo = prompt('¿Cuál es tu signo?')
 
 switch (signo) {
   case 'acuario':
@@ -19,7 +63,7 @@ switch (signo) {
     break
   case 'geminis':
   case 'géminis':
-    console.log('Sepa que en pocos días recuperará su armonía mental. De esta forma, podrá llevar a cabo todos los proyectos que tiene en mente con claridad y constancia.')
+    console.log('Sepa que en pocos días recuperará su armonía mental. De esto forma, podrá llevar a cabo todos los proyectos que tiene en mente con claridad y constancia.')
     break
   case 'leo':
     console.log('Intente hacer lo posible para superar los miedos que lo agobian cada vez que debe tomar una decisión importante en su vida. Relájese.')
@@ -28,7 +72,7 @@ switch (signo) {
     console.log('Esté atento a los asuntos familiares que tiene pendientes hace días. Sepa que la Luna en su signo le permitirá lograr todo lo que se proponga en el día.')
     break
   case 'libra':
-    console.log('Tenderá a ofenderse por todo y considerar enemigas a todas las personas que lo estiman de verdad, ya que estará muy vulnerable a las críticas en el día de hoy.')
+    console.log('Tenderá a ofenderse por todo y considerar enemigas a todas las personas que lo estiman de verdad, ya que estorá muy vulnerable a las críticas en el día de hoy.')
     break
   case 'escorpio':
     console.log('Aprenda que todo cambio en la vida siempre es muy constructivo. Momento óptimo para hacer un alto en su vida y ver desde otro punto de vista las cosas.')
@@ -43,3 +87,4 @@ switch (signo) {
     console.log('No es un signo zodiacal válido')
     break
 }
+*/
