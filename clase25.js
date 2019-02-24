@@ -1,4 +1,32 @@
 class Persona {
+  constructor(nombre, apellido, estatura){
+    this.nombre = nombre
+    this.apellido = apellido
+    this.estatura = estatura
+  }
+
+  saludar(){
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+  }
+
+  soyAlto(){
+      if(this.estatura >= 180) console.log(`Mi nombre es ${this.nombre} y soy alt@`)
+  }
+
+}
+
+class Desarrollador extends Persona {
+  constructor(nombre, apellido, estatura){
+    super(nombre, apellido, estatura)
+  }
+
+  saludar(){
+    console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y soy desarrollador/a`)
+  }
+
+}
+
+/*class Persona {
   constructor(nombre, apellido, altura) {
     this.nombre = nombre
     this.apellido = apellido
@@ -28,3 +56,4 @@ class Desarrollador extends Persona {
 // var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
 // var erika = new Persona('Erika', 'Luna', 1.65)
 // var arturo = new Persona('Arturo', 'Martinez', 1.89)
+*/
