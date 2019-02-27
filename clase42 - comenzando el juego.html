@@ -93,6 +93,8 @@
       <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
     <script>
 
     const btnEmpezar = document.getElementById('btnEmpezar')
@@ -100,7 +102,8 @@
     const violeta = document.getElementById('violeta')
     const naranja = document.getElementById('naranja')
     const verde = document.getElementById('verde')
-    const ULTIMO_NIVEL = 10
+    const ULTIMO_NIVEL = 2
+    //swal('Hola')
 
     class Juego{
       constructor(){
@@ -115,7 +118,8 @@
       inicializar(){
           this.elegirColor = this.elegirColor.bind(this)
           this.siguienteNivel = this.siguienteNivel.bind(this)
-          btnEmpezar.classList.add('hide')
+          this.toggleBtnEmpezar()
+          //btnEmpezar.classList.add('hide')
           this.nivel = 1
           this.colores = {
             celeste,
@@ -123,6 +127,14 @@
             naranja,
             verde
           }
+      }
+
+      toggleBtnEmpezar() {
+        if(btnEmpezar.classList.contains('hide')){
+          btnEmpezar.classList.remove('hide')
+        } else {
+          btnEmpezar.classList.add('hide')
+        }
       }
 
       generarSecuencia(){
@@ -191,6 +203,20 @@
         this.colores.verde.removeEventListener('click', this.elegirColor)
       }
 
+      gana(){
+        swal('Deybit', 'Felicitaciones, ganaste','success').then(() => {
+          this.eliminarEventosClick()
+          this.inicializar()
+        })
+      }
+
+      pierde(){
+        swal('Deybit', 'Ups, perdiste', 'error').then(() => {
+          this.eliminarEventosClick()
+          this.inicializar()
+        })
+      }
+
       elegirColor(ev){
         const nombreColor = ev.target.dataset.color
         const numeroColor = this.colorANumero(nombreColor)
@@ -201,13 +227,13 @@
             this.nivel++
             this.eliminarEventosClick()
             if (this.nivel === (ULTIMO_NIVEL + 1)){
-              //gano()
+              this.gana()
             }else{
               setTimeout(this.siguienteNivel, 1500)
             }
           }
         } else {
-          //pierde()
+          this.pierde()
         }
         //console.log(ev)
       }
